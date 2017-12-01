@@ -24,6 +24,8 @@ process.stdin.on('readable', function() {
 });
 */
 
+
+/*
 var OSinfo = require('./modules/OSinfo');
 
 process.stdin.setEncoding('utf-8');
@@ -48,6 +50,25 @@ process.stdin.on('readable', function() {
     }
 });
 OSinfo.print();
+
+*/
+var fs = require('fs');
+var colors = require('colors');
+
+
+
+fs.readdir('./modules', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+
+    fs.writeFile('plik.txt', data, (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      });
+    
+});
+
+  
 
 
 
