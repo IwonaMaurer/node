@@ -51,7 +51,7 @@ OSinfo.print();
 
 
 
-
+/*
 function formatUptime(uptime) {
     var unit = 'second';
     if (uptime > 60) {
@@ -69,4 +69,4 @@ function formatUptime(uptime) {
     uptime = uptime + ' ' + unit;
     return uptime;
 }
-
+*/
