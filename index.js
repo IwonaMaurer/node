@@ -49,4 +49,11 @@ server.on('request', function (request, response) {
     }
 });
 
-server.listen(8080);
+server.listen(9000);
+
+
+
+//zadanie 13.9
+
+var server = require('./modules/server');
+server.start();
